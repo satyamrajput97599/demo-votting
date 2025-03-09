@@ -1,0 +1,258 @@
+/* Background overlay to make background dark */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7); /* Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it stays on top */
+}
+@keyframes popupOpen {
+  0% {
+    transform: translate(-50%, 100%);
+    height: 0;
+    opacity: 0;
+    background: yellow;
+  }
+  50% {
+    transform: translate(-50%, -50%);
+    height: 90vh;
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    height: 70vh;
+    opacity: 1;
+    background: white;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 80vh;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  animation: popupOpen 3s ease-in-out;
+}
+
+.popup-header {
+  font-size: 2rem;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .popup {
+    height: 80vh;
+  }
+
+  .popup-header {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2rem;
+  }
+}
+
+.popup-body {
+  flex: 1; /* Takes remaining space */
+  overflow-y: auto; /* Enable scrolling */
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.popup-image {
+  width: 80vw; /* Full width */
+  height: 100vh; /* Prevent overflow */
+  object-fit: contain;
+}
+
+.whatsapp-button {
+  /* vertical-align: middle; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #3ab54a; /* Darker WhatsApp Green */
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 2.8rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  z-index: 10000;
+  transition: background-color 0.3s ease;
+}
+
+/* Icon inside the button */
+.whatsapp-button .icon {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 2.8rem;
+}
+
+/* Text inside the button */
+.whatsapp-button .text {
+  font-weight: 700;
+  border-left: 8px solid #2e9e40; /* Green Left Border */
+  padding-left: 10px; /* Space after border */
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+/* Hover effect */
+.whatsapp-button:hover {
+  background-color: #2e9e40;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .whatsapp-button {
+    font-size: 2.3rem;
+    padding: 8px 18px;
+  }
+
+  .whatsapp-button .icon {
+    font-size: 2.3rem;
+  }
+
+  .whatsapp-button .text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-button {
+    font-size: 1.8rem;
+    padding: 6px 15px;
+  }
+
+  .whatsapp-button .icon {
+    font-size: 1.8rem;
+  }
+
+  .whatsapp-button .text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-button {
+    font-size: 1.5rem;
+    padding: 5px 12px;
+    margin-bottom: 10vh;
+  }
+
+  .whatsapp-button .icon {
+    font-size: 1.5rem;
+  }
+
+  .whatsapp-button .text {
+    font-size: 1.3rem;
+  }
+}
+
+.popup-footer {
+  position: fixed;
+  top: 50%; /* Bottom se thoda upar */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.popup-footer p {
+  margin-top: 50px;
+  margin-right: 10px;
+  width: 9vw;
+  font-size: 2rem;
+  color: black;
+}
+
+.popup-footer img {
+  width: 61px; /* Chhoti image */
+  height: 77px;
+  transition: none;
+  animation: blinkEffect 1s infinite; /* 1.5 sec ka blinking effect */
+}
+
+@keyframes blinkEffect {
+  0%,
+  100% {
+    opacity: 1;
+  } /* Puri tarah visible */
+  50% {
+    opacity: 0;
+  } /* Puri tarah hide */
+}
+
+@media (max-width: 768px) {
+  .popup-footer {
+    position: fixed;
+    top: 24%; /* Bottom se thoda upar */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .popup-footer p {
+    width: 91vw;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-top: 42px;
+    margin-right: -2px;
+  }
+
+  .popup-footer span {
+    font-size: 0.9rem;
+    padding-bottom: 5px;
+  }
+  .popup-footer img {
+    width: 60px;
+    /*Chhotiimage*/
+    height: 51px;
+    transition: none;
+    animation: blinkEffect 4s infinite;
+    margin: -12;
+  }
+  .popup-image {
+    height: 70vh;
+    width: 80vw;
+  }
+}

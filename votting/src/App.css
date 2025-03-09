@@ -1,0 +1,265 @@
+
+.top-btn {
+  font-weight: 600;
+  background-color: #3D0070;
+  color: white;
+  border-radius: 50px;
+  padding: 7px 110px;
+  border-bottom: 6px solid #5A0099;
+  box-shadow: 8px 8px 12px rgba(80, 80, 80, 0.7);
+  margin-top: 8px;
+  font-size: clamp(0.9rem, 3.2vw, 1.8rem);
+  white-space: nowrap;
+  border: none;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .top-btn {
+    margin-top: 5px;
+    white-space: nowrap;
+    text-align: center;
+    padding: 6px 60px;
+    font-size: 0.9rem;
+    box-shadow: 5px 5px 10px rgba(80, 80, 80, 0.5);
+  }
+}
+
+@media (max-width: 480px) {
+  .top-btn {
+    white-space: nowrap;
+    margin-top: 2px;
+    padding: 5px 30px;
+    font-size: 0.7rem;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(80, 80, 80, 0.5);
+  }
+}
+
+
+.top-heading {
+    color: darkblue;
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .top-heading {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .top-heading {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px;
+      white-space: nowrap;
+
+    }
+  }
+
+  .title-heading {
+    color: red; /* Equivalent to Bootstrap's text-danger */
+    font-size: clamp(1.7rem, 4.2vw, 2.7rem);
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media (max-width: 768px) {
+    .title-heading {
+      font-size: 1.7rem;
+      font-weight: bold;
+      text-align: center;        }
+  }
+
+  @media (max-width: 480px) {
+    .title-heading {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 0 10px;
+    }
+  }
+
+
+  .vote-message {
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem 1vw;
+    font-size: 1.8rem;
+    width: 100vw;
+  }
+  
+  /* Apply responsive font sizes */
+  @media (max-width: 1024px) {
+    .vote-message {
+      font-size: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .vote-message {
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vote-message {
+      font-size: 1rem;
+    }
+  }
+  
+  .bold {
+    font-weight: 600;
+  }
+  
+  .extra-bold {
+    font-weight: 900;
+  }
+  
+  .stroke {
+    -webkit-text-stroke: 1px black;
+  }
+  
+
+  .whatsapp-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #3ab54a; /* Darker WhatsApp Green */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 2.8rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Icon inside the button */
+  .whatsapp-btn .icon {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    font-size: 2.8rem;
+  }
+  
+  /* Text inside the button */
+  .whatsapp-btn .text {
+    font-weight: 700;
+    border-left: 8px solid #2e9e40; /* Green Left Border */
+    padding-left: 10px; /* Space after border */
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+  
+  /* Hover effect */
+  .whatsapp-btn:hover {
+    background-color: #2e9e40;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .whatsapp-btn {
+      font-size: 2.3rem;
+      padding: 8px 18px;
+    }
+  
+    .whatsapp-btn .icon {
+      font-size: 2.3rem;
+    }
+  
+    .whatsapp-btn .text {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .whatsapp-btn {
+      font-size: 1.8rem;
+      padding: 6px 15px;
+    }
+  
+    .whatsapp-btn .icon {
+      font-size: 1.8rem;
+    }
+  
+    .whatsapp-btn .text {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .whatsapp-btn {
+      font-size: 23px;
+      padding: 0px 4px;
+      margin-top: -12px;
+    }
+  
+    .whatsapp-btn .icon {
+      font-size: 1.5rem;
+    }
+  
+    .whatsapp-btn .text {
+      font-size: 1.3rem;
+    }
+  }
+  
+
+  .vote-banner {
+    width: 100%;
+    background-color: #ffca28; /* Slightly lighter yellow */
+    text-align: center;
+    /* padding: 10px; */
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vote-banner p{
+    width:75%;
+  }
+  
+  /* Bold text for "कमल" */
+  .bold-text {
+    font-weight: 700;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .vote-banner {
+      font-size: 1.7rem;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .vote-banner {
+      font-size: 1.4rem;
+      padding: 0px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vote-banner {
+      font-size: 0.9rem;
+      padding: 0px;
+    }
+    .vote-banner p{
+      width:95%;
+    }
+    
+  }
+  

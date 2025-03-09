@@ -1,0 +1,134 @@
+.custom-table {
+    width: 96vw;
+    margin: 1vw;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: clamp(0.9rem, 4vw, 2.5rem);
+}
+
+.table-header th {
+    text-align: center;
+    background-color: #ccc;
+    padding: 20px 5px !important;
+}
+
+.image-cell {
+    width: 150px;
+    height: 150px;
+}
+
+.table-image {
+    /* width: 100%;
+    height: 100%; */
+    /* object-fit: fill; */
+}
+
+.button-container {
+    /* background-color: #FFE5C2; */
+}
+
+.rounded-indicator {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    border: 3px solid black;
+    /* margin-right: 6px; */
+    margin-top: 3px;
+}
+
+.rounded-indicator.active {
+    background-color: #FF5733;
+    border: 3px solid #FF5733;
+}
+
+.vote-button {
+    background-color: #3D0070;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50px;
+    min-width: 15vw;
+    min-height: 10vh;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    /* .custom-table {
+        width: 100%;
+        font-size: clamp(0.8rem, 3vw, 2rem);
+    } */
+
+   
+    .table-row td {
+        padding: 0;
+    }
+
+    .image-cell {
+        width: 80px;
+        height: 80px;
+    }
+
+    .rounded-indicator {
+        height: 50px;
+        width: 50px;
+    }
+
+    .vote-button {
+        padding: 7px 10px;
+        min-width: 10vw;
+        min-height: 8vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .button-container {
+        height: 30px;
+    }
+    .table-container {
+        overflow-x: hidden;
+    }
+
+    .vote-banner span {
+        font-size: 13px;
+    }
+  
+    .table-row td {
+        padding:0;
+    }
+    /* .custom-table {
+        font-size: clamp(0.7rem, 2.5vw, 1.5rem);
+    } */
+
+    .image-cell {
+        width: 45px;
+        height: 30px;
+        /* position: relative; */
+    }
+    .table-image{
+        /* width: 98%;
+        height: 83%; */
+        /* object-fit: fill; */
+    }
+
+    .rounded-indicator {
+        height: 25px;
+        width: 23px;
+    }
+
+    .vote-button {
+        /* padding: 1px 1px; */
+        /* border-radius: 40px; */
+        /* width: 90px; */
+        font-size: 10px;
+        min-width: 0px;
+        min-height: 0px;
+        height: 28px;
+        margin-top: 2px;
+        width: 64px;
+    }
+
+    
+}

@@ -1,0 +1,225 @@
+ /* user index css */
+  .dashboard-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-header h2 {
+    font-size: 24px;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+  }
+  
+  .sidebar-links li {
+    margin: 15px 0;
+  }
+  
+  .sidebar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar-links a:hover {
+    background-color: #34495e;
+    padding-left: 10px;
+  }
+  
+  .logout-button {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f6f8;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .user-info h2 {
+    font-size: 24px;
+  }
+  
+  .dashboard-banner {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .highlight-text {
+    font-weight: bold;
+  }
+  
+  .dashboard-widgets {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .widget {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+  }
+  
+  .widget h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .widget p {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .account-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    right: 0;
+    margin-top: 10px;
+    width: 200px;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown-menu .logout-btn {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-link {
+    text-decoration: none;
+    color: #3498db;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dropdown-link:hover {
+    color: #2980b9;
+  }
+  .candidate-input-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+/* Candidate Table */
+.candidate-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+.candidate-table th, .candidate-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.candidate-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.candidate-table input[type="text"] {
+  width: 90%;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Vote Button */
+.vote-btn {
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.vote-btn:hover {
+  background-color: darkviolet;
+}
+
+/* Radio Button */
+.vote-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Submit Button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
